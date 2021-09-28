@@ -180,6 +180,17 @@ ol li{
 .form-input,
 .form-textarea {
   display: inline-block;
+  width: 50%;
+}
+
+.post-input{
+  position: relative;
+  bottom: 14px;
+}
+
+.post-title{
+  position: relative;
+  left: 40px;
 }
 
 .form-label {
