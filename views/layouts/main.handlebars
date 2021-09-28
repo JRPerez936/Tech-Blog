@@ -12,16 +12,16 @@
   <div class="wrapper">
       <header class="hero">
         <nav>
-          <button class="btn"><a href="/#">Home</a></button>
+          <button class="btn"><a href="/#" class="nav-a">Home</a></button>
           {{#if loggedIn}}
-          <a href="/dashboard">Dashboard</a>
+          <button class="btn"><a href="/dashboard" class="nav-a">Dashboard</a></button>
           <button id="logout" class="btn">Logout</button>
           {{else}}
-          <button class="btn"><a href="/login">Login</a></button>
+          <button class="btn"><a href="/login" class="nav-a">Login</a></button>
           {{/if}}
         </nav>
         <h1 class="app-title">
-          <a href="/">The Tech Blog</a>
+          <a href="/" class="nav-head">The Tech Blog</a>
         </h1>
     </header>
     <main>
