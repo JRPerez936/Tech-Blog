@@ -42,6 +42,14 @@ p {
   font-size: 1.2rem;
 }
 
+a {
+  text-decoration: none;
+}
+
+ol li{
+  list-style-type: none;
+}
+
  .btn {
   font-size: 1.3rem;
   text-decoration:none;
@@ -83,7 +91,7 @@ p {
   font-size: 1.2rem;
 }
 
- .btn-back:hover {
+.btn-back:hover {
   color: var(--primary);
   background-color: var(--tertiary);
   transform: translate(0, 0);
@@ -165,7 +173,7 @@ p {
 .form-label,
 .form-input,
 .form-textarea {
-  display: block;
+  display: inline-block;
 }
 
 .form-label {
@@ -174,8 +182,6 @@ p {
 }
 
 .form-input {
-  width: 100%;
-  padding: 3%;
   margin: 5px 0;
   font-size: 1.2rem;
   border: 2px solid var(--light-dark);
