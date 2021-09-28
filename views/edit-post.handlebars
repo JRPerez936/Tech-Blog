@@ -6,7 +6,7 @@
   <form class="edit-post-form">
     <div>
       <input name="post-title" type="text" value="{{post.title}}" />
-      <span>({{format_url post.post_body}})</span>
+      <input class="form-control" id="post-body" name="post-body" value="{{post.post_body}}"/>
     </div>
     <div>
       Posted by you on {{format_date post.created_at}}
@@ -17,16 +17,6 @@
     <button type="button" class="delete-post-btn">Delete Post</button>
   </form>
 </article>
-
-<form class="comment-form">
-  <div>
-    <textarea name="comment-body"></textarea>
-  </div>
-
-  <div>
-    <button type="submit">Add Comment</button>
-  </div>
-</form>
 
 {{> comments post.comments}}
 

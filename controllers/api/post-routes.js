@@ -7,15 +7,13 @@ const withAuth = require('../../utils/auth');
 router.get('/', (req, res) => {
   console.log('======================');
   Post.findAll({
-    order: [['created_at', 'DESC']],
     attributes: [
       'id',
-      'post_body',
       'title',
+      'post_body',
       'created_at'
     ],
     include: [
-      // include the Comment model here:
       {
         model: Comment,
         attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
@@ -29,7 +27,7 @@ router.get('/', (req, res) => {
         attributes: ['username']
       }
     ]
-   })
+  })
     .then(dbPostData => res.json(dbPostData))
     .catch(err => {
       console.log(err);
@@ -44,12 +42,12 @@ router.get('/:id', (req, res) => {
     },
     attributes: [
       'id',
+      'title',
       'post_body',
       'title',
       'created_at'
     ],
     include: [
-      // include the Comment model here:
       {
         model: Comment,
         attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
@@ -78,7 +76,6 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', withAuth, (req, res) => {
-  // expects {title: 'Taskmaster goes public!', post_body: 'https://taskmaster.com/press', user_id: 1}
   Post.create({
     title: req.body.title,
     post_body: req.body.post_body,
@@ -91,10 +88,11 @@ router.post('/', withAuth, (req, res) => {
     });
 });
 
-router.put('/:id', withAuth, (req, res) => {
+router.put('/:id',withAuth, (req, res) => {
   Post.update(
     {
-      title: req.body.title
+      title: req.body.title,
+      post_body: req.body.post_body
     },
     {
       where: {
