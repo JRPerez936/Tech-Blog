@@ -39,7 +39,7 @@
 
 
   ## Usage
-  Following the installation steps will allow users to produce their own professional readme as seen [here](https://drive.google.com/file/d/1ANzPmVTYsdVFXLj6JG7szroN389qpQ-A/view?usp=sharing)
+  Following the installation steps will allow users to use the tech blog website as seen [here](https://drive.google.com/file/d/1mr7Y9M7w7YCpLraemwl6a3hEMMPEBjqo/view)
   
   You can also view the online version by going to this link:
   
