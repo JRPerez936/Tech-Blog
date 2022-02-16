@@ -39,7 +39,7 @@
 
 
   ## Usage
-  Following the installation steps will allow users to use the tech blog website as seen [here](https://drive.google.com/file/d/1mr7Y9M7w7YCpLraemwl6a3hEMMPEBjqo/view)
+  Following the installation steps will allow users to use the tech blog website as seen here:
   
   https://drive.google.com/file/d/1mr7Y9M7w7YCpLraemwl6a3hEMMPEBjqo/view
   
