@@ -1,4 +1,4 @@
-  # WK14C-Tech Blog
+  # Tech Blog
 
   ## Description
   This repo contains code for a "Tech Blog Website". On my own, I was tasked with 
